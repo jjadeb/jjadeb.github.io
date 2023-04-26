@@ -1,64 +1,52 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-	<head>
-		<title>
-			A Website for Josh
-		</title>
-	</head>
-	<body>
-		<!-- Headings -->
-
-		<h1>Messages for Josh</h1>
-		<b/>
-		<h2>A Message for Josh</h2>
-		<p>
-			Good luck on your exams!!
-		</p>
-		<h2>Another Message for Josh</h2>
-		<p>
-			I love you
-		</p>
-		<h2>Another Message for Josh</h2>
-		<p>
-			Jesus loves you
-		</p>
-		<h2>A Bible Verse for Josh</h2>
-		
-
-		<p id="demo"></p>
-
-		<script>
-		function myFunction() {
- 		 document.getElementById("demo").innerHTML = "The Lord is my shepherd, I lack nothing. He makes me lie down in green pastures, he leads me beside quiet waters, he refreshes my soul. He guides me along the right paths for his name’s sake. - Psalm 23";
-		}
-		</script>
-
-		<button onclick="myFunction()">Click me</button>
-		
-		<b/>
-
-		<button onclick="myfFunction()">Click me</button>
-
-		<p id="demo"></p>
-
-		<script>
-		function myfFunction() {
- 		 document.getElementById("demo").innerHTML = "Peace I leave with you; my peace I give you. I do not give to you as the world gives. Do not let your hearts be troubled and do not be afraid. -John 14:27";
-		}
-		</script>
-
-		<button onclick="mytFunction()">Click me</button>
-
-		<p id="demo"></p>
-
-		<script>
-		function mytFunction() {
- 		 document.getElementById("demo").innerHTML = "Fear not, for I am with you; be not dismayed, for I am your God; I will strengthen you, I will help you, I will uphold you with my righteous right hand. - Isaiah 41:10";
-		}
-		</script> 
-		
+<head>
+  <title>Aidan's Workaversary Card!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Aidan's Workaversary Card!</h1>
+	</header>
+	<main>
+		<section class="work-party-images">
+			<div class='section-inner'>
+				<img src='istockphoto-1281294506-170667a.jpeg' id='confetti-work-party-img'>
+			</div>
+		</section>
+		<section id='congratulation-message'>
+			<div class='section-inner'>
+				<p class='p1'>Happy one year workaversery Aidan!! Your career accomplishments are absolutely incredible. I’ll never get tired of hearing people say “a software engineer at Amazon at 20?!“ But more than I admire your work accomplishments, I admire the drive and passion you have for programming. Hearing you get excited about a project or a work problem that needs solving brings me so much joy :) Thank you for your willingness to share bits of your knowledge with me!</p>
+			</div>
+		</section>
+		<section class="work-party-images">
+			<div class='section-inner'>
+				<img src='IMG_5685.JPG' id='aidan-pretty-hot-programmer' height=500 class='rotate'>
+			</div>
+		</section>
+		<section class="burrito">
+			<p id="demo"></p>
+			<p id="future-burrito"></p>
 	
-	
-	</body>
+			<script>
+				document.getElementById("demo").innerHTML = "You are neato!";
+			</script>
+	   		<button id="show-image-button">Burrito</button>
+   			<img id="my-image" src="burrito.jpeg" style="display: none;" height=500>
+   			<script>
+      				const showImageButton = document.getElementById("show-image-button");
+      				const myImage = document.getElementById("my-image"); 
+      				showImageButton.addEventListener("click", () => {
+      				if (myImage.style.display == "none") {
+          				myImage.style.display = "block"; 
+          				} else if (myImage.style.display == "block") {
+          				myImage.style.display = "none";
+          				} 
+      				});
+   			</script>
+		</section>
+	</main>
+
+
+</body>
 </html>
-
